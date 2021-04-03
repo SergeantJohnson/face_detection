@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Face Recogniser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+        <center>
+            <h1 class="btn btn-warning">Family Face Recogniser</h1>
+            <br>
+            <br>
+            <p class="btn btn-danger">The module is trained to recognize the following people</p>
+            <br>
+            <br>
+            <h3 >Mother</h3>
+            <br>
+            <br>
+            <h3 >Father</h3>
+            <br>
+            <br>
+            <h3 >Brother</h3>
+            <br>
+            <br>
+            <h3 >Me</h3>
+            <br>
+            <br>
+            <button class="btn btn-success" onclick="takeSnapshot()"> Take Snapshot </button>
+            <br>
+            <br>
+            <button class="btn btn-info" onclick="check()"> Identify Image </button>
+            <br>
+            <br>
+            <div id="camera"></div>
+            <br>
+            <div id="result"></div>
+            <br>
+            <br>
+            <h3 id="name"></h3>
+            <br>
+            <h3 id="accuracy"></h3>
+        </center>  
+    </body>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,9 @@
+body{
+      background-image: url('1.jpg');
+      background-size: cover;
+}
+
+h3{
+     background-color: chartreuse;
+     width: 40%;
+}
